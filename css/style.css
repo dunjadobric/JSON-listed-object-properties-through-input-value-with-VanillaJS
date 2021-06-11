@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: #e2e8ef;
+}
+
+.content {
+    width: 30%;
+    background-color: #e2e8ef;
+    height: fit-content;
+}
+
+.posts {
+    width: 70%;
+    background-color: #bbb4ac;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputDiv {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    margin: 5px;
+}
+
+.input {
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #8f8f8f;
+    width: 150px;
+    background-color: #8f8f8f;
+    color: #e2e8ef;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.post {
+    background-color: #fff;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.post:nth-child(1) {
+    margin-top: 25px;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    color: #98928a;
+    font-weight: bold;
+}
+
+.text {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.postTitle {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .content {
+        width: 100%;
+    }
+    .posts {
+        width: 100%;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .inputDiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 490px) {
+    .post {
+        width: 90%;
+    }
+}
